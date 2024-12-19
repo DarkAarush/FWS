@@ -30,9 +30,8 @@ from config import BANNED_USERS, lyrical
         [
             "play",
             "pl", 
-            "p", 
-            "song", 
             "gana", 
+            "song", 
             "vplay",
             "cplay",
             "cvplay",
@@ -672,4 +671,4 @@ async def slider_queries(client, CallbackQuery, _):
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
-        )
+    )
